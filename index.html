@@ -544,8 +544,33 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.5rem;
     }
+
+    .edu-logo-wrap {
+      height: 44px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .edu-logo {
+      max-height: 44px;
+      max-width: 120px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+
+    .edu-card:hover .edu-logo { opacity: 1; }
+
+    .edu-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .edu-link:hover .edu-program { color: var(--gold-light); }
 
     .edu-program {
       font-family: 'Cormorant Garamond', serif;
@@ -964,28 +989,65 @@
     <div class="edu-grid">
       <div class="edu-card reveal">
         <div class="edu-year">2019</div>
-        <div class="edu-school">MIT Sloan School of Management</div>
-        <div class="edu-program">Executive Program — Blockchain Technologies: Business Innovation &amp; Application</div>
+        <a class="edu-link" href="https://mitsloan.mit.edu" target="_blank" rel="noopener">
+          <div class="edu-logo-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" style="max-height:38px;max-width:140px;opacity:0.8">
+  <text x="0" y="42" font-family="Georgia,serif" font-size="42" font-weight="700" fill="#c9a84c" letter-spacing="-1">MIT</text>
+  <text x="82" y="28" font-family="Georgia,serif" font-size="14" fill="rgba(245,240,232,0.85)" letter-spacing="1">SLOAN</text>
+  <text x="82" y="44" font-family="Georgia,serif" font-size="11" fill="rgba(245,240,232,0.6)" letter-spacing="0.5">School of Management</text>
+</svg>
+          </div>
+          <div class="edu-school">MIT Sloan School of Management</div>
+          <div class="edu-program">Executive Program — Blockchain Technologies: Business Innovation &amp; Application</div>
+        </a>
       </div>
       <div class="edu-card reveal">
         <div class="edu-year">2017</div>
-        <div class="edu-school">INSEAD</div>
-        <div class="edu-program">High Impact Leadership Program</div>
+        <a class="edu-link" href="https://www.insead.edu" target="_blank" rel="noopener">
+          <div class="edu-logo-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" style="max-height:38px;max-width:140px;opacity:0.8">
+  <text x="0" y="38" font-family="Georgia,serif" font-size="38" font-weight="700" fill="rgba(245,240,232,0.9)" letter-spacing="3">INSEAD</text>
+</svg>
+          </div>
+          <div class="edu-school">INSEAD</div>
+          <div class="edu-program">High Impact Leadership Program</div>
+        </a>
       </div>
       <div class="edu-card reveal">
         <div class="edu-year">1999 – 2004</div>
-        <div class="edu-school">University of California, Berkeley</div>
-        <div class="edu-program">PhD, Economics</div>
+        <a class="edu-link" href="https://www.berkeley.edu" target="_blank" rel="noopener">
+          <div class="edu-logo-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" style="max-height:38px;max-width:160px;opacity:0.8">
+  <circle cx="25" cy="25" r="22" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+  <text x="25" y="20" font-family="Georgia,serif" font-size="9" fill="#c9a84c" text-anchor="middle" letter-spacing="1">UC</text>
+  <text x="25" y="31" font-family="Georgia,serif" font-size="7" fill="rgba(245,240,232,0.7)" text-anchor="middle">BERKELEY</text>
+  <text x="58" y="22" font-family="Georgia,serif" font-size="13" fill="rgba(245,240,232,0.9)" letter-spacing="0.5">University of</text>
+  <text x="58" y="38" font-family="Georgia,serif" font-size="13" fill="rgba(245,240,232,0.9)" letter-spacing="0.5">California, Berkeley</text>
+</svg>
+          </div>
+          <div class="edu-school">University of California, Berkeley</div>
+          <div class="edu-program">PhD, Economics</div>
+        </a>
       </div>
       <div class="edu-card reveal">
         <div class="edu-year">1994 – 1998</div>
-        <div class="edu-school">Thammasat University</div>
-        <div class="edu-program">BA, Economics</div>
+        <a class="edu-link" href="https://www.tu.ac.th" target="_blank" rel="noopener">
+          <div class="edu-logo-wrap">
+            <img class="edu-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Emblem_of_Thammasat_University.svg" alt="Thammasat University" style="max-height:48px;max-width:48px;object-fit:contain;filter:none;opacity:0.9;" />
+          </div>
+          <div class="edu-school">Thammasat University</div>
+          <div class="edu-program">BA, Economics</div>
+        </a>
       </div>
       <div class="edu-card reveal">
         <div class="edu-year">1990 – 1994</div>
-        <div class="edu-school">Suankularb Wittayalai</div>
-        <div class="edu-program">High School</div>
+        <a class="edu-link" href="https://www.sk.ac.th" target="_blank" rel="noopener">
+          <div class="edu-logo-wrap" style="height:44px;display:flex;align-items:center;">
+            <img class="edu-logo" src="https://upload.wikimedia.org/wikipedia/th/thumb/3/3d/Suankularb_Wittayalai_School_emblem.png/200px-Suankularb_Wittayalai_School_emblem.png" alt="Suankularb Wittayalai" style="max-height:48px;max-width:48px;object-fit:contain;filter:none;opacity:0.9;" />
+          </div>
+          <div class="edu-school">Suankularb Wittayalai</div>
+          <div class="edu-program">High School</div>
+        </a>
       </div>
     </div>
   </section>
@@ -1055,7 +1117,7 @@
     <div class="contact-inner">
       <p class="section-label" style="justify-content:center">Contact</p>
       <h2 class="section-title" style="font-size:2.5rem">Let's Connect</h2>
-      <p>Available for speaking engagements, economic commentary, board advisory, and strategic consultations on Thai and regional capital markets.</p>
+
       <div class="contact-links">
         <a href="https://www.linkedin.com/in/pipat-luengnaruemitchai-a392b77/" target="_blank" class="btn btn-primary">LinkedIn Profile</a>
         <a href="https://www.kkpfg.com" target="_blank" class="btn btn-outline">Kiatnakin Phatra</a>
